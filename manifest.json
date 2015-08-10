@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Flatiron Anti-Social",
+  "description": "Quiet mode for Learn.co",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "shh-logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://learn.co/*"],
+      "css": ["fas.css"]
+    }
+  ]
+}
